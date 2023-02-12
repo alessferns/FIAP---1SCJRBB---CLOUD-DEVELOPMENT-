@@ -1,0 +1,215 @@
+{
+    "name": "trabalho-pos-vm-nsg",
+    "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkSecurityGroups/trabalho-pos-vm-nsg",
+    "etag": "W/\"e0d7d081-66ca-479f-9f90-eeafa59d271a\"",
+    "type": "Microsoft.Network/networkSecurityGroups",
+    "location": "eastus",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "74512252-13e3-4809-adca-22ab52a3dc68",
+        "securityRules": [
+            {
+                "name": "SSH",
+                "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkSecurityGroups/trabalho-pos-vm-nsg/securityRules/SSH",
+                "etag": "W/\"e0d7d081-66ca-479f-9f90-eeafa59d271a\"",
+                "type": "Microsoft.Network/networkSecurityGroups/securityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "protocol": "TCP",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "22",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "*",
+                    "access": "Allow",
+                    "priority": 300,
+                    "direction": "Inbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            },
+            {
+                "name": "HTTP",
+                "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkSecurityGroups/trabalho-pos-vm-nsg/securityRules/HTTP",
+                "etag": "W/\"e0d7d081-66ca-479f-9f90-eeafa59d271a\"",
+                "type": "Microsoft.Network/networkSecurityGroups/securityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "protocol": "TCP",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "80",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "*",
+                    "access": "Allow",
+                    "priority": 320,
+                    "direction": "Inbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            },
+            {
+                "name": "HTTPS",
+                "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkSecurityGroups/trabalho-pos-vm-nsg/securityRules/HTTPS",
+                "etag": "W/\"e0d7d081-66ca-479f-9f90-eeafa59d271a\"",
+                "type": "Microsoft.Network/networkSecurityGroups/securityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "protocol": "TCP",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "443",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "*",
+                    "access": "Allow",
+                    "priority": 340,
+                    "direction": "Inbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            }
+        ],
+        "defaultSecurityRules": [
+            {
+                "name": "AllowVnetInBound",
+                "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkSecurityGroups/trabalho-pos-vm-nsg/defaultSecurityRules/AllowVnetInBound",
+                "etag": "W/\"e0d7d081-66ca-479f-9f90-eeafa59d271a\"",
+                "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Allow inbound traffic from all VMs in VNET",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "VirtualNetwork",
+                    "destinationAddressPrefix": "VirtualNetwork",
+                    "access": "Allow",
+                    "priority": 65000,
+                    "direction": "Inbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            },
+            {
+                "name": "AllowAzureLoadBalancerInBound",
+                "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkSecurityGroups/trabalho-pos-vm-nsg/defaultSecurityRules/AllowAzureLoadBalancerInBound",
+                "etag": "W/\"e0d7d081-66ca-479f-9f90-eeafa59d271a\"",
+                "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Allow inbound traffic from azure load balancer",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "AzureLoadBalancer",
+                    "destinationAddressPrefix": "*",
+                    "access": "Allow",
+                    "priority": 65001,
+                    "direction": "Inbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            },
+            {
+                "name": "DenyAllInBound",
+                "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkSecurityGroups/trabalho-pos-vm-nsg/defaultSecurityRules/DenyAllInBound",
+                "etag": "W/\"e0d7d081-66ca-479f-9f90-eeafa59d271a\"",
+                "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Deny all inbound traffic",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "*",
+                    "access": "Deny",
+                    "priority": 65500,
+                    "direction": "Inbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            },
+            {
+                "name": "AllowVnetOutBound",
+                "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkSecurityGroups/trabalho-pos-vm-nsg/defaultSecurityRules/AllowVnetOutBound",
+                "etag": "W/\"e0d7d081-66ca-479f-9f90-eeafa59d271a\"",
+                "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Allow outbound traffic from all VMs to all VMs in VNET",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "VirtualNetwork",
+                    "destinationAddressPrefix": "VirtualNetwork",
+                    "access": "Allow",
+                    "priority": 65000,
+                    "direction": "Outbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            },
+            {
+                "name": "AllowInternetOutBound",
+                "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkSecurityGroups/trabalho-pos-vm-nsg/defaultSecurityRules/AllowInternetOutBound",
+                "etag": "W/\"e0d7d081-66ca-479f-9f90-eeafa59d271a\"",
+                "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Allow outbound traffic from all VMs to Internet",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "Internet",
+                    "access": "Allow",
+                    "priority": 65001,
+                    "direction": "Outbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            },
+            {
+                "name": "DenyAllOutBound",
+                "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkSecurityGroups/trabalho-pos-vm-nsg/defaultSecurityRules/DenyAllOutBound",
+                "etag": "W/\"e0d7d081-66ca-479f-9f90-eeafa59d271a\"",
+                "type": "Microsoft.Network/networkSecurityGroups/defaultSecurityRules",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Deny all outbound traffic",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "*",
+                    "access": "Deny",
+                    "priority": 65500,
+                    "direction": "Outbound",
+                    "sourcePortRanges": [],
+                    "destinationPortRanges": [],
+                    "sourceAddressPrefixes": [],
+                    "destinationAddressPrefixes": []
+                }
+            }
+        ],
+        "networkInterfaces": [
+            {
+                "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkInterfaces/trabalho-pos-vm101"
+            }
+        ]
+    }
+}
