@@ -1,0 +1,70 @@
+{
+    "name": "trabalho-pos-vm101",
+    "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkInterfaces/trabalho-pos-vm101",
+    "etag": "W/\"ecd11255-5085-490f-b13b-6fa481bcf94e\"",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "d537f6ba-4fbb-45c1-aba9-301283cab818",
+        "ipConfigurations": [
+            {
+                "name": "ipconfig1",
+                "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkInterfaces/trabalho-pos-vm101/ipConfigurations/ipconfig1",
+                "etag": "W/\"ecd11255-5085-490f-b13b-6fa481bcf94e\"",
+                "type": "Microsoft.Network/networkInterfaces/ipConfigurations",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAddress": "10.0.0.4",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "publicIPAddress": {
+                        "name": "trabalho-pos-vm-ip",
+                        "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/publicIPAddresses/trabalho-pos-vm-ip",
+                        "properties": {
+                            "provisioningState": "Succeeded",
+                            "resourceGuid": "28ac1b9b-677e-4b78-909f-40db096828b9",
+                            "publicIPAddressVersion": "IPv4",
+                            "publicIPAllocationMethod": "Dynamic",
+                            "idleTimeoutInMinutes": 4,
+                            "ipTags": [],
+                            "ipConfiguration": {
+                                "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkInterfaces/trabalho-pos-vm101/ipConfigurations/ipconfig1"
+                            },
+                            "deleteOption": "Delete"
+                        },
+                        "type": "Microsoft.Network/publicIPAddresses",
+                        "sku": {
+                            "name": "Basic",
+                            "tier": "Regional"
+                        }
+                    },
+                    "subnet": {
+                        "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/virtualNetworks/trabalho_pos-vnet/subnets/default"
+                    },
+                    "primary": true,
+                    "privateIPAddressVersion": "IPv4"
+                }
+            }
+        ],
+        "dnsSettings": {
+            "dnsServers": [],
+            "appliedDnsServers": [],
+            "internalDomainNameSuffix": "r1pgjwh2d3yexfuchuoymms03d.bx.internal.cloudapp.net"
+        },
+        "macAddress": "60-45-BD-EF-7C-8A",
+        "enableAcceleratedNetworking": true,
+        "vnetEncryptionSupported": false,
+        "enableIPForwarding": false,
+        "networkSecurityGroup": {
+            "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkSecurityGroups/trabalho-pos-vm-nsg"
+        },
+        "primary": true,
+        "virtualMachine": {
+            "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/TRABALHO_POS/providers/Microsoft.Compute/virtualMachines/trabalho-pos-vm"
+        },
+        "hostedWorkloads": [],
+        "tapConfigurations": [],
+        "nicType": "Standard"
+    },
+    "type": "Microsoft.Network/networkInterfaces",
+    "location": "eastus",
+    "kind": "Regular"
+}
