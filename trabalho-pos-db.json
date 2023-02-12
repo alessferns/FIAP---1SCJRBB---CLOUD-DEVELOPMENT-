@@ -1,0 +1,50 @@
+{
+    "sku": {
+        "name": "Standard_B1ms",
+        "tier": "Burstable"
+    },
+    "systemData": {
+        "createdAt": "2023-02-05T02:30:38.8379133Z"
+    },
+    "properties": {
+        "administratorLogin": "trabalho",
+        "storage": {
+            "storageSizeGB": 20,
+            "iops": 360,
+            "autoGrow": "Enabled",
+            "storageSku": "Premium_LRS"
+        },
+        "version": "5.7",
+        "state": "Ready",
+        "fullyQualifiedDomainName": "trabalho-pos-db.mysql.database.azure.com",
+        "availabilityZone": "1",
+        "maintenanceWindow": {
+            "customWindow": "Disabled",
+            "dayOfWeek": 0,
+            "startHour": 0,
+            "startMinute": 0
+        },
+        "replicationRole": "None",
+        "replicaCapacity": 10,
+        "network": {
+            "publicNetworkAccess": "Enabled"
+        },
+        "backup": {
+            "backupRetentionDays": 7,
+            "geoRedundantBackup": "Disabled",
+            "earliestRestoreDate": "2023-02-05T08:19:16.3527319+00:00"
+        },
+        "highAvailability": {
+            "mode": "Disabled",
+            "state": "NotEnabled",
+            "standbyAvailabilityZone": ""
+        }
+    },
+    "location": "East US",
+    "tags": {
+        "ambiente": "dev"
+    },
+    "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.DBforMySQL/flexibleServers/trabalho-pos-db",
+    "name": "trabalho-pos-db",
+    "type": "Microsoft.DBforMySQL/flexibleServers"
+}
