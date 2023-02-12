@@ -1,0 +1,33 @@
+{
+    "name": "trabalho_pos-vnet",
+    "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/virtualNetworks/trabalho_pos-vnet",
+    "etag": "W/\"47858698-c442-48a2-8622-35ba964371cc\"",
+    "type": "Microsoft.Network/virtualNetworks",
+    "location": "eastus",
+    "properties": {
+        "provisioningState": "Succeeded",
+        "resourceGuid": "d864de8e-1ffc-4b70-9682-3d1d86325aeb",
+        "addressSpace": {
+            "addressPrefixes": [
+                "10.0.0.0/16"
+            ]
+        },
+        "subnets": [
+            {
+                "name": "default",
+                "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/virtualNetworks/trabalho_pos-vnet/subnets/default",
+                "etag": "W/\"47858698-c442-48a2-8622-35ba964371cc\"",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "addressPrefix": "10.0.0.0/24",
+                    "ipConfigurations": [
+                        {
+                            "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkInterfaces/trabalho-pos-vm101/ipConfigurations/ipconfig1"
+                        }
+                    ]
+                },
+                "type": "Microsoft.Network/virtualNetworks/subnets"
+            }
+        ]
+    }
+}
