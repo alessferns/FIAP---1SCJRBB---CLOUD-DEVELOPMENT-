@@ -5,6 +5,8 @@
 "Disponibilizar em uma gravação vídeo disponibilizado ao professor uma apresentação com diagrama de arquitetura de solução Azure contendo no mínimo 3 serviços que se comuniquem e explicar o projeto mostrando a solução rodando em seu ambiente Azure com evidências como dados no banco de dados, log da aplicação ou ainda mensagens no broker de mensagem.
 Além do vídeo disponibilizar um repositório público onde seja possível ter acesso ao código fonte das aplicações que compõem a solução."
 
+No nosso caso, os três serviços são: Servidor web Apache com formulário HTML + CSS + PHP, DNS e Banco de dados MySQL.
+
 Vídeo da Apresentação no Youtube:
 LINK
 
@@ -26,3 +28,4 @@ Formulário (É possível ser acessado pelo IP 20.228.206.56 ou pelo DNS www.fsc
 MySQL - Bases de dados, Tabela e SELECT:
 ![image](https://user-images.githubusercontent.com/100177921/218299653-56b461c7-e7ff-4206-82b4-5f8316d567a1.png)
 
+Obrigado!
