@@ -8,7 +8,7 @@ Além do vídeo disponibilizar um repositório público onde seja possível ter 
 No nosso caso, os três serviços são: Servidor web Apache com formulário HTML + CSS + PHP, DNS e Banco de dados MySQL.
 
 Vídeo da Apresentação no Youtube:
-LINK
+https://www.youtube.com/watch?v=1W7N4tFuzh4
 
 Visão geral - AZURE:
 ![image](https://user-images.githubusercontent.com/100177921/218299404-ff557325-3e45-4310-90a0-ae96d3b29bee.png)
