@@ -1,0 +1,20 @@
+{
+    "name": "trabalho-pos-vm_OsDisk_1_5e5ac4066217435b9371994e06923a7c",
+    "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/TRABALHO_POS/providers/Microsoft.Compute/disks/trabalho-pos-vm_OsDisk_1_5e5ac4066217435b9371994e06923a7c",
+    "type": "Microsoft.Compute/disks",
+    "location": "eastus",
+    "managedBy": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Compute/virtualMachines/trabalho-pos-vm",
+    "properties": {
+        "osType": "Linux",
+        "creationData": {
+            "createOption": "FromImage",
+            "imageReference": {
+                "id": "/Subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/Providers/Microsoft.Compute/Locations/eastus/Publishers/canonical/ArtifactTypes/VMImage/Offers/0001-com-ubuntu-server-focal/Skus/20_04-lts-gen2/Versions/20.04.202301130"
+            }
+        },
+        "diskSizeGB": 30,
+        "timeCreated": "2023-02-05T02:18:19.0958997+00:00",
+        "provisioningState": "Succeeded",
+        "diskState": "Attached"
+    }
+}
