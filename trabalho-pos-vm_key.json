@@ -1,0 +1,9 @@
+{
+    "name": "trabalho-pos-vm_key",
+    "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/TRABALHO_POS/providers/Microsoft.Compute/sshPublicKeys/trabalho-pos-vm_key",
+    "location": "eastus",
+    "tags": {},
+    "properties": {
+        "publicKey": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDaEIlQ5ZBJ/zwFWcreBb27EaS6gkxjkDXsc7MR017/YoV8+Bk7FuO3GR+cwMiJ7t8tZK5E3Pya6Y/aC/XVfmG3Nr5pTF1fLGg91cDLohn3no9w1gku7/JgutivLe6tzkVUR1fOd+c7K2afGY5N3E275ie2TzAMyYVFcYv67clRzeTfN+xCJIuYgHDR8aDz5zL4SSWB6CkaSD9+MpAMBrMyknGHFoiY+Lnt6g3skkawq6MDYTS+i8kqGtLWvsdl8whH0bYTRNNSNEEUhGJZwlN6r+G8E95FtcHMMDYZy9PSAMFvQzzt8Rq3CSVTVEAE+c+r9e6XV5aAkosY0qQCkw71AfDhU3gSXTPQJ1kW2O/wjaVIDUqEhz0m5JNT20iRYXOOXYr6X7KBpD2xBBTVqdKzFpU4G4Q69DYmcfK5w7/2ZDLYVtKB7u3iof2uCl6ZCHzAhdrZGmYn+a7unV1eUudoiCKHtG0LXYGaqceYdKdTCMtV+z7rVK6+gU9BjNBIc/U= generated-by-azure"
+    }
+}
