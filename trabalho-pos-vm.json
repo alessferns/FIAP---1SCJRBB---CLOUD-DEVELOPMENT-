@@ -1,0 +1,78 @@
+{
+    "name": "trabalho-pos-vm",
+    "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/TRABALHO_POS/providers/Microsoft.Compute/virtualMachines/trabalho-pos-vm",
+    "type": "Microsoft.Compute/virtualMachines",
+    "location": "eastus",
+    "properties": {
+        "vmId": "2e4feffa-7be0-4ef2-87c1-c0f7ed37103b",
+        "hardwareProfile": {
+            "vmSize": "Standard_DS1_v2"
+        },
+        "storageProfile": {
+            "imageReference": {
+                "publisher": "canonical",
+                "offer": "0001-com-ubuntu-server-focal",
+                "sku": "20_04-lts-gen2",
+                "version": "latest",
+                "exactVersion": "20.04.202301130"
+            },
+            "osDisk": {
+                "osType": "Linux",
+                "name": "trabalho-pos-vm_OsDisk_1_5e5ac4066217435b9371994e06923a7c",
+                "createOption": "FromImage",
+                "caching": "ReadWrite",
+                "managedDisk": {
+                    "storageAccountType": "StandardSSD_LRS",
+                    "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/TRABALHO_POS/providers/Microsoft.Compute/disks/trabalho-pos-vm_OsDisk_1_5e5ac4066217435b9371994e06923a7c"
+                },
+                "deleteOption": "Delete",
+                "diskSizeGB": 30
+            },
+            "dataDisks": []
+        },
+        "osProfile": {
+            "computerName": "trabalho-pos-vm",
+            "adminUsername": "azureuser",
+            "linuxConfiguration": {
+                "disablePasswordAuthentication": true,
+                "ssh": {
+                    "publicKeys": [
+                        {
+                            "path": "/home/azureuser/.ssh/authorized_keys",
+                            "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDaEIlQ5ZBJ/zwFWcreBb27EaS6gkxjkDXsc7MR017/YoV8+Bk7FuO3GR+cwMiJ7t8tZK5E3Pya6Y/aC/XVfmG3Nr5pTF1fLGg91cDLohn3no9w1gku7/JgutivLe6tzkVUR1fOd+c7K2afGY5N3E275ie2TzAMyYVFcYv67clRzeTfN+xCJIuYgHDR8aDz5zL4SSWB6CkaSD9+MpAMBrMyknGHFoiY+Lnt6g3skkawq6MDYTS+i8kqGtLWvsdl8whH0bYTRNNSNEEUhGJZwlN6r+G8E95FtcHMMDYZy9PSAMFvQzzt8Rq3CSVTVEAE+c+r9e6XV5aAkosY0qQCkw71AfDhU3gSXTPQJ1kW2O/wjaVIDUqEhz0m5JNT20iRYXOOXYr6X7KBpD2xBBTVqdKzFpU4G4Q69DYmcfK5w7/2ZDLYVtKB7u3iof2uCl6ZCHzAhdrZGmYn+a7unV1eUudoiCKHtG0LXYGaqceYdKdTCMtV+z7rVK6+gU9BjNBIc/U= generated-by-azure"
+                        }
+                    ]
+                },
+                "provisionVMAgent": true,
+                "patchSettings": {
+                    "patchMode": "ImageDefault",
+                    "assessmentMode": "ImageDefault"
+                }
+            },
+            "secrets": [],
+            "allowExtensionOperations": true,
+            "requireGuestProvisionSignal": true
+        },
+        "networkProfile": {
+            "networkInterfaces": [
+                {
+                    "id": "/subscriptions/cf38676b-fb29-4604-ba63-3a257b3c922b/resourceGroups/trabalho_pos/providers/Microsoft.Network/networkInterfaces/trabalho-pos-vm101",
+                    "properties": {
+                        "deleteOption": "Delete"
+                    }
+                }
+            ]
+        },
+        "diagnosticsProfile": {
+            "bootDiagnostics": {
+                "enabled": true
+            }
+        },
+        "provisioningState": "Succeeded",
+        "priority": "Spot",
+        "evictionPolicy": "Deallocate",
+        "billingProfile": {
+            "maxPrice": -1
+        }
+    }
+}
